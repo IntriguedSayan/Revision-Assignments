@@ -1,0 +1,88 @@
+#mainDiv{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid teal;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    border-radius: 16px;
+
+}
+.mainText{
+
+    width: 120px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.leftToolTip{
+
+    visibility: hidden;
+    width: 100px;
+    background-color: greenyellow;
+    padding: 10px 0;
+    border-radius: 10px;
+    color: white;
+    position: absolute;
+    left: -90%;
+   top: -55%;
+
+}
+
+.leftToolTip::after {
+
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 100%;
+   margin-top: -5%;
+   border-width: 5px;
+   border-style: solid;
+   border-color: transparent transparent transparent lawngreen;
+
+}
+
+.mainText:hover{
+    cursor: pointer;
+}
+.mainText:hover .leftToolTip{
+
+    visibility: visible;
+}
+
+#mainDiv>div:nth-child(1){
+
+    background-color: aqua;
+    color: white;
+    border-radius: 16px;
+
+}
+#mainDiv>div:nth-child(2){
+
+    background-color: royalblue;
+    color: white;
+    border-radius: 16px;
+
+}
+
+#mainDiv>div:nth-child(3){
+
+    background-color:  red;
+    color: white;
+    border-radius: 16px;
+
+}
+
+#mainDiv>div:nth-child(4){
+
+    background-color: salmon;
+    color: white;
+    border-radius: 16px;
+
+}
+
+
