@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+#navbar{
+
+    border: 2px solid crimson;
+    width: 95%;
+    height: 90px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px;
+
+}
+
+#masaiLogo{
+
+    margin-left: 5%;
+    font-weight: bolder;
+
+}
+
+.button{
+
+    background-color:cadetblue ;
+    color: white;
+    padding: 5% 5%;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#hamburger{
+
+    background-color: grey;
+    display: none;
+}
+
+#initHamburger{
+
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+@media all and (min-width:150px)and (max-width:720px){
+    #navbar{
+
+        border: 2px solid crimson;
+        width: 95%;
+        height: 50px;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 16px;
+    
+    }
+
+    #initHamburger{
+
+        
+        width: 100%;
+        position:relative;
+        top: 370%;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* margin-right: 30%; */
+        /* margin-top: 35%; */
+    }
+
+    #hamburger{
+
+       background-color: grey;
+       display: block;
+       margin-right: 5%;
+
+    }
+
+    .elems{
+
+        border: 1px solid white;
+        width: 100%;
+        height: 50px;
+        background-color: cadetblue;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+
+    }
+
+}
