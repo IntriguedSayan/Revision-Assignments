@@ -110,15 +110,36 @@
 
 
 
-const factorial=function fact(n){
+// const factorial=function fact(n){
 
-    if(n<2){
-        return 1
-    }
+//     if(n<2){
+//         return 1
+//     }
 
-    return n*fact(n-1)
+//     return n*fact(n-1)
 
-}
+// }
 
-console.log(factorial(5))
+// console.log(factorial(5))
 
+
+// const b=10
+// let a=10
+
+// if(b===10){
+//     let a=5
+// }
+
+// var func1=function func2(){
+
+//     console.log("")
+// }
+
+// func1()
+// func2()
+
+let nums=[1,2,3,4,4]
+
+let out=nums.forEach((elem,index)=>index%2===0)
+
+console.log(out)

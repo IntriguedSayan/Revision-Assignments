@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid teal;
+    /* border: 1px solid teal; */
     width: 800px;
     height: 400px;
     margin: auto;
@@ -29,7 +29,55 @@
     color: white;
     position: absolute;
     left: -90%;
-   top: -55%;
+    top: -55%;
+    z-index: 1;
+
+}
+
+.rightToolTip{
+
+    visibility: hidden;
+    width: 100px;
+    background-color: plum;
+    padding: 10px 0;
+    border-radius: 10px;
+    color: white;
+    position: absolute;
+    right: -93%;
+    top: -55%;
+    z-index: 1;
+
+}
+
+.topToolTip{
+
+    visibility: hidden;
+    width: 100px;
+    background-color: coral;
+    padding: 10px 0;
+    border-radius: 10px;
+    color: white;
+    position: absolute;
+    bottom: 150%;
+    right: 10%;
+    margin-bottom: 10%;
+    z-index: 1;
+
+}
+
+.bottomToolTip{
+
+    visibility: hidden;
+    width: 100px;
+    background-color: crimson;
+    padding: 10px 0;
+    border-radius: 10px;
+    color: white;
+    position: absolute;
+    top: 210%;
+    right: 10%;
+    margin-bottom: 10%;
+    z-index: 1;
 
 }
 
@@ -46,10 +94,65 @@
 
 }
 
+.rightToolTip::after {
+
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent plum transparent transparent;
+ 
+ }
+
+ .topToolTip::after {
+
+    content: "";
+    position: absolute;
+    right: 50%;
+    top: 100%;
+    margin-top: -5%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent coral ;
+ 
+ }
+
+ .bottomToolTip::after{
+
+    content: "";
+    position: absolute;
+    right: 50%;
+    bottom: 100%;
+    margin-top: -5%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent crimson transparent  ;
+
+
+ }
+
 .mainText:hover{
+
     cursor: pointer;
+
 }
 .mainText:hover .leftToolTip{
+
+    visibility: visible;
+}
+.mainText:hover .rightToolTip{
+
+    visibility: visible;
+}
+.mainText:hover .topToolTip{
+
+    visibility: visible;
+}
+
+.mainText:hover .bottomToolTip{
 
     visibility: visible;
 }
