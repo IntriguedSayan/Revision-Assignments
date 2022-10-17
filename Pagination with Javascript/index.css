@@ -1,0 +1,19 @@
+#mainDiv{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid teal; */
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    border-radius: 16px;
+
+}
+
+#slct{
+
+    padding: 20px 20px;
+    border: 2px solid currentColor;
+
+}
