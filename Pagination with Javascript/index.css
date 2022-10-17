@@ -1,6 +1,6 @@
 #mainDiv{
 
-    display: flex;
+    /* display: flex; */
     justify-content: space-around;
     align-items: center;
     /* border: 1px solid teal; */
@@ -13,7 +13,42 @@
 
 #slct{
 
+    margin-left: 40%;
     padding: 20px 20px;
     border: 2px solid currentColor;
 
+}
+
+#paginateDiv{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid teal;
+    width: 800px;
+    height: 100px;
+    margin: auto;
+    margin-top: 15%;
+    border-radius: 16px;
+
+}
+
+#paginateDiv>button{
+
+    height: 50px;
+    width: 55px;
+    background-color: teal;
+    color: white;
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+
+}
+
+#content{
+
+    border: 2px solid salmon;
+    border-radius: 10px;
+    margin-top: 10%;
+    /* height: 75vh; */
 }
