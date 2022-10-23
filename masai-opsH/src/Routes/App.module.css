@@ -1,0 +1,10 @@
+.home{
+
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: navajowhite;
+    border-radius: 10px;
+
+}
