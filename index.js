@@ -1,6 +1,9 @@
 
 // Scope
 
+// import { func } from "prop-types";
+// import { useEffect } from "react";
+
 // let a=100
 
 
@@ -138,8 +141,124 @@
 // func1()
 // func2()
 
-let nums=[1,2,3,4,4]
+// let nums=[1,2,3,4,4]
 
-let out=nums.forEach((elem,index)=>index%2===0)
+// let out=nums.forEach((elem,index)=>index%2===0)
 
-console.log(out)
+// console.log(out)
+
+
+// function fun(a,...b){
+
+//     console.log(arguments.length)
+
+// }
+
+// fun(3,"afa","dfsd")
+
+// const amar={money:1000}
+
+// const akbar=Object.create(amar)
+
+// const anthony=Object.create(akbar)
+
+// console.log(anthony.money)
+
+// console.log(a)
+// console.log(b)
+
+// var a=10
+// let b=20
+
+// var a=1
+
+// setTimeout(()=>{
+
+//     console.log(a)
+
+// },0)
+
+// for(let i=0;i<10;i++){}
+// a++
+
+
+// let arr=[]
+
+// for(let i=1;i<5;i++){
+
+//     arr.push(()=>{
+//         console.log(i)
+//     })
+
+// }
+
+// arr.forEach((el)=>el())
+
+// var a;
+// function x(){
+//     a=10
+// }
+
+// console.log(a)
+
+
+
+
+// const toggle=toggler(1,2,3)
+
+// toggle()
+
+// toggle()
+
+// toggle()
+
+// let count=0
+// for(let i=42;i<=102;i++){
+//     if(i%4===0 ){
+//         count++
+//     }
+// }
+// console.log(count)
+// console.log((118+124+142+83+141)%39)
+
+
+
+
+
+
+// export default function Index(){
+
+
+//     const [data,setData]=useState([])
+
+
+//     useEffect(()=>{
+
+//         fetch("http://reqres.in/api/users")
+//         .then((res)=>res.json())
+//         .then((res)=> setData(res))
+//         .catch((err)=>console.log(err))
+
+//     },[])
+    
+
+//     return(
+
+//         <ul>
+//         {
+//             data.map((elem)=>(
+//                 <li key={elem.id}>{elem.title}</li>
+//             ))
+//         }
+//         </ul>
+
+
+
+//     )
+// }
+
+
+
+
+
+

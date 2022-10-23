@@ -1,7 +1,7 @@
 
 const getTotalData=async()=>{
    console.log("gtd")
-    let res=await fetch(`https://jsonplaceholder.typicode.com/albums`)
+    let res=await fetch(`http://localhost:8080/products`)
     res=await res.json()
     let totalDataLength=await res.length 
     console.log(typeof(totalDataLength))
@@ -45,7 +45,7 @@ async function getDataByPageAndLimit(page,limit){
     console.log("gdpal")
     try{
 
-        let res = await fetch(`https://jsonplaceholder.typicode.com/albums?_page=${page}&_limit=${limit}`)
+        let res = await fetch(`http://localhost:8080/products?_page=${page}&_limit=${limit}`)
         res = await res.json()
         console.log(res)
         showData(res)
@@ -62,7 +62,7 @@ async function getDataByPageAndLimit(page,limit){
 const getDataByLimit=async(limit)=>{
 
 try{
-    let res = await fetch(`https://jsonplaceholder.typicode.com/albums?_limit=${limit}`)
+    let res = await fetch(`http://localhost:8080/products?_limit=${limit}`)
     res=await res.json()
     console.log(res)
     showData(res)
