@@ -17,21 +17,21 @@ function Login() {
 
       e.preventDefault()
       
-      fetch("https://reqres.in/api/login",{
-        method:"POST",
-        headers:{
-          "Content-type":"application/json"
-        },
-        body:JSON.stringify({
-          email:email,
-          password:password
-        })
-      }).then((res)=>res.json())
-        .then((res)=>{
-               dispatch({type:LOGIN_SUCCESS,payload:{token:res.token}})
-              navigate("/dashboard")
-        })
-        .catch((err)=>console.log(err))
+    fetch("https://reqres.in/api/login",{
+          method:"POST",
+          headers:{
+            "Content-type":"application/json"
+          },
+          body:JSON.stringify({
+            email:email,
+            password:password
+          })
+        }).then((res)=>res.json())
+          .then((res)=>{
+                dispatch({type:LOGIN_SUCCESS,payload:{token:res.token}})
+                navigate("/dashboard")
+          })
+          .catch((err)=>console.log(err))
   }
 
 

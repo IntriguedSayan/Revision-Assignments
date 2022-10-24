@@ -1,11 +1,18 @@
+import { useNavigate } from "react-router-dom"
 
 
 
 export function RestaurantCard({
-    name, number_of_votes, price_starts_from, rating, type
+    name, number_of_votes, price_starts_from, rating, type,id 
 }){
+
+
+    const navigate = useNavigate()
+
+
+
     return (
-        <tr data-testid="item">
+        <tr data-testid="item" style={{cursor:"pointer"}} onClick={()=>navigate(`/dashboard/${id}`)}>
             <td data-testid="name"><p>{name}</p>
             </td>
             <td data-testid="rating"><p>{rating}</p>
