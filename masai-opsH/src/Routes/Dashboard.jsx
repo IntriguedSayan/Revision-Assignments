@@ -13,7 +13,7 @@ function Dashboard() {
   const [totalPages,setTotalPages] = useState(10)
   const [page,setPage] = useState(1)
 
-  const handleLogout=()=>{
+  const logoutUser =()=>{
 
     dispatch({type:LOGOUT_SUCCESS})
 
@@ -41,7 +41,7 @@ function Dashboard() {
     <div>
       <h3>Dashboard</h3>
       <div>
-        <button data-testid="logout-btn" onClick={handleLogout} >Logout</button>
+        <button data-testid="logout-btn" onClick={logoutUser } >Logout</button>
         <p>
           Token:
           <b data-testid="user-token">{state.token}</b>

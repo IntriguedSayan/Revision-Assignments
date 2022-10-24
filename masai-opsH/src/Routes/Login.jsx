@@ -13,7 +13,7 @@ function Login() {
   const [state,dispatch] = useContext(AppContext)
   const navigate = useNavigate()
 
-  const handleSubmit=(e)=>{
+  const loginUser=(e)=>{
 
       e.preventDefault()
       
@@ -37,7 +37,7 @@ function Login() {
 
   return (
     <div>
-      <form data-testid="login-form" onSubmit={handleSubmit} >
+      <form data-testid="login-form" onSubmit={loginUser} >
         <div>
           <label>
             Email
