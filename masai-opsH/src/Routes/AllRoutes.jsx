@@ -18,7 +18,7 @@ function AllRoutes() {
           <Route path="/"  element={<Home/>} />
           <Route path="/login" element={<Login/>} />
           <Route path="/dashboard" element={<PrivateRoute><Dashboard/></PrivateRoute>}  />
-          <Route path="/dashboard/:id" element={<PrivateRoute><SingleRestaurantPage/></PrivateRoute>} /> 
+          <Route path="/restaurants/:id" element={<PrivateRoute><SingleRestaurantPage/></PrivateRoute>} /> 
 
         </Routes>
     </div>

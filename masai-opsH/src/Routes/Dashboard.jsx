@@ -27,7 +27,7 @@ function Dashboard() {
 
   useEffect(()=>{
 
-    fetch(`https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/getrestaurants?page=${page}&limit=5`)
+    fetch(`https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/getrestaurants?page=${page}&limit=10`)
       .then((res)=>res.json())
       .then((res)=>{
         setResData(res.data)
