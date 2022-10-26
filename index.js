@@ -260,5 +260,27 @@
 
 
 
+function toggler(...arr){
+
+    let counter=0
+    return function displayToggle(){
+        
+        console.log(arr[counter])
+        counter++
+
+    }
+    // displayToggle
+
+}
+
+const toggle = toggler(1,2,3)
+
+toggle()
+toggle()
+toggle()
+// toggle()
+
+
+
 
 
